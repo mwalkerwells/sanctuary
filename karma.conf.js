@@ -14,7 +14,10 @@ function depMain(name) {
 var dependencies = [
   'sanctuary-type-identifiers',
   'sanctuary-type-classes',
-  'sanctuary-def'
+  'sanctuary-def',
+  'sanctuary-either',
+  'sanctuary-maybe',
+  'sanctuary-pair'
 ];
 
 eq(dependencies.slice().sort(),

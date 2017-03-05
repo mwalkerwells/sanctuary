@@ -12,7 +12,7 @@ test('unfoldr', function() {
   eq(S.unfoldr.toString(), 'unfoldr :: (b -> Maybe (Pair a b)) -> b -> Array a');
 
   function f(n) {
-    return n >= 5 ? S.Nothing : S.Just([n, n + 1]);
+    return n >= 5 ? S.Nothing : S.Just(S.Pair(n, n + 1));
   }
   eq(S.unfoldr(f, 5), []);
   eq(S.unfoldr(f, 4), [4]);
