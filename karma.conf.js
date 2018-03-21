@@ -87,6 +87,8 @@ var options = {
 
   files: dependencies.map(depMain).concat(['index.js', 'test/**/*.js']),
 
+  exclude: ['test/NODE_ENV.js'],
+
   preprocessors: {
     'test/**/*.js': ['browserify']
   },
