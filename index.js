@@ -4971,7 +4971,7 @@
     impl: splitOnRegex
   };
 
-  return create({checkTypes: true, env: defaultEnv});
+  return create({checkTypes: false, env: defaultEnv});
 
 }));
 
